@@ -6,15 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./demo1.component.css']
 })
 export class Demo1Component implements OnInit {
+  title: string;
 
-  title:string;
-  name:string;
-  doj:Date;
-
-  constructor() { 
-    this.title = "Manager";
-    this.name = "Shiva Sai";
-    this.doj = new Date();
+  constructor() {
+    this.title = "Demo One !!!";
   }
 
   ngOnInit() {
