@@ -3,5 +3,21 @@ h2 {
 }
 
 h4 {
-    color: cornflowerblue;
+    color:  rgb(20, 57, 220);
 }
+
+p {
+    color:  cornflowerblue;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.element {
+    margin: 10px;
+    padding: 5px;
+  }

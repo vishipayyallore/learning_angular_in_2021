@@ -77,8 +77,8 @@ label {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #1976d2;
-  color: white;
+  background-color: #2e0cee;
+  color: rgb(232, 241, 232);
   border: none;
 }
 
@@ -108,7 +108,7 @@ label {
 
 app-top-band {
   width: 100%;
-  height: 68px;
+  height: 50px;
   background-color: #1976d2;
   padding: 16px;
   display: flex;

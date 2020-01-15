@@ -1,7 +1,15 @@
 <h2>Products List</h2>
 
 <div *ngFor="let product of products">
-    <h4>
-        <a [title]="product.name + ' details'">{{product.name}}</a>
-    </h4>
+    <h5 class="element">
+        <a bind-title="product.name + ' details'">{{product.name}}</a>
+    </h5>
+
+    <p *ngIf="product.description"  class="element">
+        Description: {{product.description}}
+    </p>
+
+    <button (click)="shareProduct()"  class="element">
+        Share Product
+    </button>
 </div>
