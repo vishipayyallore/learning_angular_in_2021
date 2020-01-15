@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBandComponent } from './top-band/top-band.component';
 import { ProductsListComponent } from './products-list/products-list.component';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBandComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    ProductAlertsComponent
   ],
   imports: [
     BrowserModule,
