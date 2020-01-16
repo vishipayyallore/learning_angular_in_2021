@@ -14,7 +14,7 @@ export class ProductDetailsComponent implements OnInit {
 
 	constructor(private route: ActivatedRoute) {
 		this.route.paramMap.subscribe(params => {
-			this.product = productslist[parseInt(params.get('productId'))-1];
+			this.product = productslist[params.get('productId')];
 		});
 	}
 

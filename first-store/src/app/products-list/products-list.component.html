@@ -1,8 +1,8 @@
 <h2>Products List</h2>
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of products; index as productId">
     <h5 class="element">
-        <a bind-title="product.name + ' details'" [routerLink]="['/product', product.id]">{{product.name}}</a>
+    <a bind-title="product.name + ' details'" [routerLink]="['/product', product.id]">{{productId+1}}. {{product.name}}</a>
     </h5>
 
     <p *ngIf="product.description"  class="element">
