@@ -1,1 +1,4 @@
 <h1>Title: {{title}}</h1>
+
+<input #userName type="text" /> 
+<button (click)="logMessage(userName.value)" class="element">Log Message</button>
