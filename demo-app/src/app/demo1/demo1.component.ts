@@ -15,7 +15,7 @@ export class Demo1Component implements OnInit {
   ngOnInit() {
   }
 
-  logMessage(value){
+  logMessage(value: string){
     console.log(value);
   }
 
