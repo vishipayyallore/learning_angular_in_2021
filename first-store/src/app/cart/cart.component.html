@@ -1,3 +1,8 @@
 <h2>Items in Cart</h2>
 
+<div class="cart-item" *ngFor="let product of selectedProducts">
+    <span>{{ product.name }}</span>
+    <span>{{ product.price | currency }}</span>
+</div>
+
 <button [routerLink]="['/']" class="element">Products List</button> 
