@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ng g c product-details
 ng generate service cart
+ng build --prod
 
 ## Development server
 
