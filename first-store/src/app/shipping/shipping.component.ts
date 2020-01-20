@@ -10,6 +10,7 @@ import { Shipping } from '../interfaces/Shipping';
 })
 export class ShippingComponent implements OnInit {
 	shippingCosts: Shipping[];
+	shippingPrizes;
 
 	constructor(private cartService: CartService) { }
 
@@ -17,6 +18,9 @@ export class ShippingComponent implements OnInit {
 		this.cartService.getShippingPrices().subscribe(data => {
 			this.shippingCosts = data.body;
 		});
+
+		this.shippingPrizes = this.cartService.getShippingPricesV2();
+
 	}
 
 }

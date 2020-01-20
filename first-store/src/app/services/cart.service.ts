@@ -33,4 +33,8 @@ export class CartService {
 		return this.httpClient.get<Shipping[]>('/assets/shipping.json', { observe: 'response' });
 	}
 
+	getShippingPricesV2() {
+		return this.httpClient.get('/assets/shipping.json');
+	}
+
 }
