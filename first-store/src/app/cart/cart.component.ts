@@ -27,7 +27,7 @@ export class CartComponent implements OnInit {
 
 	onSubmit(customerData: UserDto): void {
 		// Process Checkout Data here
-		console.warn(`Your order has been submitted ${customerData.name} ${customerData.address}`);
+		console.warn(`Your order has been submitted with Name: ${customerData.name} Address: ${customerData.address}`);
 
 		this.selectedProducts = this.cartService.clearSelectedProducts();
 		this.checkoutForm.reset();
