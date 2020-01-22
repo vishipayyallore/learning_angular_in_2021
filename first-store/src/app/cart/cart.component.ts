@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { CartService } from '../services/cart.service';
 import { ProductDto } from '../interfaces/ProductDto';
+import { UserDto } from '../interfaces/UserDto';
 
 @Component({
 	selector: 'app-cart',
@@ -24,9 +25,9 @@ export class CartComponent implements OnInit {
 		this.selectedProducts = this.cartService.getProductsFromCart();
 	}
 
-	onSubmit(customerData): void {
+	onSubmit(customerData: UserDto): void {
 		// Process Checkout Data here
-		console.warn(`Your order has been submitted ${customerData}`);
+		console.warn(`Your order has been submitted ${customerData.name} ${customerData.address}`);
 
 		this.selectedProducts = this.cartService.clearSelectedProducts();
 		this.checkoutForm.reset();
