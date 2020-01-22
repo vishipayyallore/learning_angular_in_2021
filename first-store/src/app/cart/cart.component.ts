@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { CartService } from '../services/cart.service';
+import { ProductDto } from '../interfaces/ProductDto';
 
 @Component({
 	selector: 'app-cart',
@@ -9,7 +10,7 @@ import { CartService } from '../services/cart.service';
 	styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-	selectedProducts: any[] = [];
+	selectedProducts: ProductDto[] = [];
 	checkoutForm: FormGroup;
 
 	constructor(private cartService: CartService, private formBuilder: FormBuilder) {

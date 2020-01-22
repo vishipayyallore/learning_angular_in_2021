@@ -3,18 +3,18 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { Shipping } from '../interfaces/Shipping';
+import { ProductDto } from '../interfaces/ProductDto';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class CartService {
-	selectedProducts: any[] = [];
+	selectedProducts: ProductDto[] = [];
 
 	constructor(private httpClient: HttpClient) {
 	}
 
-	// TODO: Need to send the return value mentioning whether the Product was already exists OR added
-	addProductToCart(product): boolean {
+	addProductToCart(product: ProductDto): boolean {
 		var results = false;
 
 		if (!this.selectedProducts.some(item => item.id === product.id)) {
@@ -25,11 +25,11 @@ export class CartService {
 		return results;
 	}
 
-	getProductsFromCart(): any[] {
+	getProductsFromCart(): ProductDto[] {
 		return this.selectedProducts;
 	}
 
-	clearSelectedProducts(): any[] {
+	clearSelectedProducts(): ProductDto[] {
 		this.selectedProducts = [];
 		return this.getProductsFromCart();
 	}
