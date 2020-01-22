@@ -14,10 +14,15 @@ export class CartService {
 	}
 
 	// TODO: Need to send the return value mentioning whether the Product was already exists OR added
-	addProductToCart(product) {
+	addProductToCart(product): boolean {
+		var results = false;
+
 		if (!this.selectedProducts.some(item => item.id === product.id)) {
 			this.selectedProducts.push(product);
+			results = true;
 		}
+
+		return results;
 	}
 
 	getProductsFromCart() {
