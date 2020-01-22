@@ -8,7 +8,7 @@ import { Shipping } from '../interfaces/Shipping';
 	providedIn: 'root'
 })
 export class CartService {
-	selectedProducts = [];
+	selectedProducts: any[] = [];
 
 	constructor(private httpClient: HttpClient) {
 	}
@@ -25,11 +25,11 @@ export class CartService {
 		return results;
 	}
 
-	getProductsFromCart() {
+	getProductsFromCart(): any[] {
 		return this.selectedProducts;
 	}
 
-	clearSelectedProducts() {
+	clearSelectedProducts(): any[] {
 		this.selectedProducts = [];
 		return this.getProductsFromCart();
 	}
@@ -38,7 +38,7 @@ export class CartService {
 		return this.httpClient.get<Shipping[]>('/assets/shipping.json', { observe: 'response' });
 	}
 
-	getShippingPricesV2() {
+	getShippingPricesV2(): Observable<Object> {
 		return this.httpClient.get('/assets/shipping.json');
 	}
 
