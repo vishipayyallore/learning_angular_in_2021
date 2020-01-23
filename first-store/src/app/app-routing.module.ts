@@ -6,11 +6,12 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
 const routes: Routes = [
-	{ path: '', redirectTo: 'home', pathMatch: 'full' },
 	{ path: 'home', component: ProductsListComponent },
 	{ path: 'product/:productId', component: ProductDetailsComponent },
 	{ path: 'cart', component: CartComponent },
-	{ path: 'shipping', component: ShippingComponent }
+	{ path: 'shipping', component: ShippingComponent },
+	{ path: '', redirectTo: 'home', pathMatch: 'full' },
+	{ path: '**', component: ProductsListComponent }
 ];
 
 @NgModule({
