@@ -38,8 +38,8 @@ export class CartService {
 		return this.httpClient.get<Shipping[]>('/assets/shipping.json', { observe: 'response' });
 	}
 
-	getShippingPricesV2(): Observable<Object> {
-		return this.httpClient.get('/assets/shipping.json');
+	getShippingPricesV2(): Observable<Shipping[]> {
+		return this.httpClient.get<Shipping[]>('/assets/shipping.json', { observe: 'body' });
 	}
 
 }

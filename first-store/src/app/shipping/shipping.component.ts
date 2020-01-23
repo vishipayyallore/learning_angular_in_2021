@@ -11,7 +11,8 @@ import { Shipping } from '../interfaces/Shipping';
 })
 export class ShippingComponent implements OnInit {
 	shippingCosts: Shipping[];
-	shippingPrizes: Observable<Object>;
+	shippingPrizes: Observable<Shipping[]>;
+	errorMessage: string;
 
 	constructor(private cartService: CartService) { }
 
@@ -21,6 +22,14 @@ export class ShippingComponent implements OnInit {
 		});
 
 		this.shippingPrizes = this.cartService.getShippingPricesV2();
+
+		/*
+		this.cartService.getShippingPricesV2()
+							.subscribe({
+								next: prizes => this.shippingPrizes = prizes,
+								error: err =>  console.error(err.errorMessage)
+							});
+		*/
 	}
 
 }
