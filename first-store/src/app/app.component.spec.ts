@@ -33,7 +33,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     // expect(compiled.querySelector('#root2 div h1').textContent).toContain('Learning Unit Test');
-    expect(compiled.querySelector('#root2 app-top-band a:nth-child(1) h1').textContent).toContain('Simple Store');
+    expect(compiled.querySelector('app-top-band a:nth-child(1) h1').textContent).toContain('Simple Store');
 
   });
 });
