@@ -28,10 +28,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('Simple Store');
   });
 
-  xit('should render title', () => {
+  it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('first-store app is running!');
+    expect(compiled.querySelector('#root2 div h1').textContent).toContain('Learning Unit Test');
   });
 });
