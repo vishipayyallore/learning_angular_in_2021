@@ -4,6 +4,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { ProductAlertsComponent } from './product-alerts.component';
 import { ProductDto } from '../interfaces/ProductDto';
 import { ProductDetailsComponent } from '../product-details/product-details.component';
+import { productsList } from '../products-list/products-list';
 
 describe('ProductAlertsComponent', () => {
   let component: ProductAlertsComponent;
