@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { ProductAlertsComponent } from './product-alerts.component';
 import { ProductDto } from '../interfaces/ProductDto';
@@ -11,16 +12,17 @@ describe('ProductAlertsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductAlertsComponent ]
+      declarations: [ProductAlertsComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ProductAlertsComponent);
     component = fixture.componentInstance;
 
-    product = {id: 1, price:123.34, name: 'Dummy Product', description: 'Dummy Description'};
+    product = { id: 1, price: 123.34, name: 'Dummy Product', description: 'Dummy Description' };
     component.product = product;
     fixture.detectChanges();
   });
