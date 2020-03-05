@@ -9,8 +9,8 @@ import { ModifyProductComponent } from './modify-product/modify-product.componen
 const routes: Routes = [
 	{ path: 'home', component: LandingPageComponent },
 	{ path: 'products', component: ProductsListComponent },
-	{ path: 'addproduct', component: AddProductComponent },
-	{ path: 'modifyproduct', component: ModifyProductComponent },
+	{ path: 'add-product', component: AddProductComponent },
+	{ path: 'modify-product', component: ModifyProductComponent },
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },
 	{ path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];

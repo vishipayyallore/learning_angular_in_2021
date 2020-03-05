@@ -1,1 +1,35 @@
-<p>products-list works!</p>
+<div class="container wrapper">
+    <div class="row">
+
+        <!-- Issue table -->
+        <div class="col-md-12">
+            <div class="inner">
+                <h3>Products List</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Number</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of productsList">
+                            <th scope="row">{{product.id}}</th>
+                            <td>{{product.name}}</td>
+                            <td>{{product.price}}</td>
+                            <td>{{product.description}}</td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm move-right" >Edit</button>
+                                <button type="button" class="btn btn-danger btn-sm element">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
