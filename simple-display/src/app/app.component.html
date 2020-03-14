@@ -3,6 +3,30 @@
 <button (click)="getPosts()"> get</button>
 
 <div *ngFor = "let post of posts">
-  {{ post | json }}
+  <div>
+      <div>User Id: {{post.userId}}</div>
+      <div>Title: {{post.title}}</div>
+      <div>Content: {{post.body}}</div>
+  </div>
 </div>
 <router-outlet></router-outlet>
+
+<!-- {{ post | json }} -->
+
+<!--
+
+     import { map } from 'rxjs/operators';
+  import { Observable } from 'rxjs';
+
+  posts: Observable<any[]>;
+
+  getPosts() {
+     this.posts = this.http.get(this.ROOT_URL + '/posts/1').pipe(
+       map((post) => [post])
+     );
+  }
+
+  <div *ngFor = "let post of posts | async">
+  {{ post | json }}
+</div>
+-->
