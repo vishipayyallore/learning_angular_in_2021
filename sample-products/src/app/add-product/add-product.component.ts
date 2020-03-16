@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ProductDto } from '../interfaces/ProductDto';
 
 @Component({
     selector: 'app-add-product',
@@ -12,4 +14,12 @@ export class AddProductComponent implements OnInit {
     ngOnInit(): void {
     }
 
+    onSubmit(productData: ProductDto): void {
+		// Process Checkout Data here
+		// console.warn(`Your order has been submitted with Name: ${customerData.name} Address: ${customerData.address}`);
+
+		// this.selectedProducts = this.cartService.clearSelectedProducts();
+		// this.checkoutForm.reset();
+    }
+    
 }
