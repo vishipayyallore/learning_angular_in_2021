@@ -20,6 +20,16 @@ export class ProductsService {
     constructor(private httpClient: HttpClient) {
     }
 
+
+    // POST
+    CreateProduct(data: ProductDto): Observable<ProductDto> {
+        return this.httpClient.post<ProductDto>(`${baseUrl}/products/`, JSON.stringify(data), httpOptions)
+            .pipe(
+                retry(1),
+                catchError(this.errorHandler)
+            )
+    }
+
     // GET
     GetProducts(): Observable<ProductDto[]> {
         return this.httpClient.get<ProductDto[]>(`${baseUrl}/products`)
