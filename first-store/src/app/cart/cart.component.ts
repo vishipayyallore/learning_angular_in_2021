@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone  } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { CartService } from '../services/cart.service';
