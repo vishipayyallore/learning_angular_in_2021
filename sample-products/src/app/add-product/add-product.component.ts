@@ -11,14 +11,21 @@ export class AddProductComponent implements OnInit {
 
     productForm: FormGroup;
 
-    constructor(private formBuilder: FormBuilder) { }
+    constructor(private formBuilder: FormBuilder) { 
+        this.productForm = this.formBuilder.group({
+			id: '',
+            name: '',
+            price: '',
+            description: ''            
+		});
+    }
 
     ngOnInit(): void {
     }
 
     onSubmit(productData: ProductDto): void {
 		// Process Checkout Data here
-		// console.warn(`Your order has been submitted with Name: ${customerData.name} Address: ${customerData.address}`);
+		console.warn(`Your order has been submitted with Name: ${productData.name} Address: ${productData.description}`);
 
 		// this.selectedProducts = this.cartService.clearSelectedProducts();
 		// this.checkoutForm.reset();
