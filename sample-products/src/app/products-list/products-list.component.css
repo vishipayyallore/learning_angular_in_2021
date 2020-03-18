@@ -5,3 +5,9 @@ th {
 h3 {
     color: darkblue;
 }
+
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
