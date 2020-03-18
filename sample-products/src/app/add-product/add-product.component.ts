@@ -9,7 +9,9 @@ import { ProductDto } from '../interfaces/ProductDto';
 })
 export class AddProductComponent implements OnInit {
 
-    constructor() { }
+    productForm: FormGroup;
+
+    constructor(private formBuilder: FormBuilder) { }
 
     ngOnInit(): void {
     }
