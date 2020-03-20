@@ -25,7 +25,7 @@
                             <td>{{product.price}}</td>
                             <td>{{product.description}}</td>
                             <td>
-                                <button type="button" class="btn btn-success btn-sm move-right" >Edit</button>
+                                <button type="button" class="btn btn-success btn-sm move-right" [routerLink]="['/modify-product', product.id]">Edit</button>
                                 <button type="button" class="btn btn-danger btn-sm element">Remove</button>
                             </td>
                         </tr>
