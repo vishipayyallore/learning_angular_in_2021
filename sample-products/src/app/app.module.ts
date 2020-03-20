@@ -11,6 +11,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ModifyProductComponent } from './modify-product/modify-product.component';
 import { ProductsService } from './services/products.service';
+import { DeleteProductComponent } from './delete-product/delete-product.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductsService } from './services/products.service';
     ProductsListComponent,
     LandingPageComponent,
     AddProductComponent,
-    ModifyProductComponent
+    ModifyProductComponent,
+    DeleteProductComponent
   ],
   imports: [
     BrowserModule,

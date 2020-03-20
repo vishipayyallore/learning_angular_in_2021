@@ -26,7 +26,7 @@
                             <td>{{product.description}}</td>
                             <td>
                                 <button type="button" class="btn btn-success btn-sm move-right" [routerLink]="['/modify-product',product.id]">Edit</button>
-                                <button type="button" class="btn btn-danger btn-sm element">Remove</button>
+                                <button type="button" class="btn btn-danger btn-sm element" [routerLink]="['/delete-product',product.id]">Remove</button>
                             </td>
                         </tr>
                     </tbody>
