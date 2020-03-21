@@ -11,27 +11,18 @@ import { ProductsService } from '../services/products.service';
 })
 export class ModifyProductComponent implements OnInit {
 
-    product: any;
+    product: ProductDto;
 
     constructor(private route: ActivatedRoute, private productsService: ProductsService) {
-        this.productsService.GetProductById(1)
-                    .subscribe((data: any) => {
-                        this.product = {id: 1, name: 'Shiva'};
-                    });
+    }
 
-        /*
+    ngOnInit(): void {
         this.route.paramMap.subscribe(params => {
             this.productsService.GetProductById(parseInt(params.get('productId')))
                 .subscribe((data: ProductDto) => {
                     this.product = data;
                 });
-            console.log(`${this.product}`);
         });
-        */
-    }
-
-    ngOnInit(): void {
-        console.log(`${this.product}`);
     }
 
 }
