@@ -21,6 +21,7 @@ export class ModifyProductComponent implements OnInit {
             this.productsService.GetProductById(parseInt(params.get('productId')))
                 .subscribe((data: ProductDto) => {
                     this.product = data;
+                    console.log(`${this.product.name}`);
                 });
         });
     }
