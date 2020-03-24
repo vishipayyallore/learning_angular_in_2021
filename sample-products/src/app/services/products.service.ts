@@ -49,6 +49,16 @@ export class ProductsService {
             )
     }
 
+    // DELETE
+    DeleteProductById(id: number) {
+        console.log(`Delete Product request received for ${id}`);
+        return this.httpClient.delete<ProductDto>(`${baseUrl}/products/${id}`, httpOptions)
+            .pipe(
+                retry(1),
+                catchError(this.errorHandler)
+            )
+    }
+
     // Error handling
     errorHandler(error) {
         let errorMessage = '';

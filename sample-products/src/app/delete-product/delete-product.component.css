@@ -1,3 +1,7 @@
+h2 {
+    color: darkorchid;
+}
+
 .divflex {
     display: flex;
     flex-direction: row;

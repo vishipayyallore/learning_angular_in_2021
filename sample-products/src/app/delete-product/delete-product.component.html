@@ -3,9 +3,11 @@
         <h2>Delete Product</h2>
         <!-- Form -->
         <div class="col-md-12" *ngIf="product">
+            <form [formGroup]="productForm" (ngSubmit)="onDelete(product.id)" novalidate>
+                
                 <div class="form-group divflex">
                     <label class="element">Id: </label>
-                    <h6 class="element">{{ product.id }}</h6>
+                    <input type="text" formControlName="id" class="form-control element" readonly [(ngModel)]="product.id" maxlength="5">
                 </div>
     
                 <div class="form-group divflex">
@@ -23,8 +25,10 @@
                     <p class="element">{{ product.description }}</p>
                 </div>
 
-                <button type="button" class="btn btn-danger btn-sm element" [routerLink]="['/delete-product',product.id]">Remove</button>
+                <button type="submit" class="btn btn-danger btn-sm element">Delete Product</button>
                 <button type="button" class="btn btn-info element" [routerLink]="['/products']">Products List</button>
+
+            </form>
         </div>
     </div>
 </div>
