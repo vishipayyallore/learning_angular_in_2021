@@ -1,0 +1,10 @@
+.divflex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.element {
+    margin: 5px;
+    padding: 1px;
+  }
