@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, NgZone } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { ProductDto } from '../interfaces/ProductDto';
 import { ProductsService } from '../services/products.service';
@@ -12,8 +13,16 @@ import { ProductsService } from '../services/products.service';
 export class ModifyProductComponent implements OnInit {
 
     product: ProductDto;
+    productForm: FormGroup;
 
-    constructor(private route: ActivatedRoute, private productsService: ProductsService) {
+    constructor(private route: ActivatedRoute, private productsService: ProductsService, 
+        private ngZone: NgZone, private router: Router, private formBuilder: FormBuilder) {
+        this.productForm = this.formBuilder.group({
+            id: '',
+            name: '',
+            price: '',
+            description: ''
+        });
     }
 
     ngOnInit(): void {
@@ -25,5 +34,16 @@ export class ModifyProductComponent implements OnInit {
                 });
         });
     }
+
+    /* For Modify
+    onDelete(id: number): void {
+        console.warn(`Product Delete Request for Id: ${id}`);
+
+        this.productsService.DeleteProductById(id).subscribe(res => {
+            console.log('Product Deleted!')
+            this.ngZone.run(() => this.router.navigateByUrl('/products'))
+        });
+    }
+    */
 
 }
