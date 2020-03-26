@@ -35,7 +35,7 @@ export class ModifyProductComponent implements OnInit {
         });
     }
 
-    /* For Modify
+    /* For Modify */
     onDelete(id: number): void {
         console.warn(`Product Delete Request for Id: ${id}`);
 
@@ -44,6 +44,6 @@ export class ModifyProductComponent implements OnInit {
             this.ngZone.run(() => this.router.navigateByUrl('/products'))
         });
     }
-    */
+    
 
 }
