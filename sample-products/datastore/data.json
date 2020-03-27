@@ -21,7 +21,7 @@
     {
       "id": 4,
       "name": "Product D",
-      "price": 901.01,
+      "price": "901.78",
       "description": "Product D Description"
     },
     {
