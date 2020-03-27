@@ -61,7 +61,7 @@ export class ProductsService {
 
     // UPDATE
     ModifyProductById(id: number, product: ProductDto) {
-        console.log(`Update Product request received for ${id}`);
+        console.log(`Update Product request received for ${id} ${JSON.stringify(product)}`);
         return this.httpClient.put<ProductDto>(`${baseUrl}/products/${id}`, JSON.stringify(product), httpOptions)
             .pipe(
                 retry(1),
