@@ -59,6 +59,16 @@ export class ProductsService {
             )
     }
 
+    // UPDATE
+    UpdateProductById(id: number, product: ProductDto) {
+        console.log(`Update Product request received for ${id}`);
+        return this.httpClient.put<ProductDto>(`${baseUrl}/products/${id}`, JSON.stringify(product), httpOptions)
+            .pipe(
+                retry(1),
+                catchError(this.errorHandler)
+            )
+    }
+
     // Error handling
     errorHandler(error) {
         let errorMessage = '';
