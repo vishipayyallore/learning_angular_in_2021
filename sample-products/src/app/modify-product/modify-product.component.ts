@@ -36,11 +36,11 @@ export class ModifyProductComponent implements OnInit {
     }
 
     /* For Modify */
-    onDelete(id: number): void {
-        console.warn(`Product Delete Request for Id: ${id}`);
+    onModify(id: number, productData: ProductDto): void {
+        console.warn(`Product Modify Request for Id: ${id}`);
 
-        this.productsService.DeleteProductById(id).subscribe(res => {
-            console.log('Product Deleted!')
+        this.productsService.ModifyProductById(id, productData).subscribe(res => {
+            console.log('Product Modified!')
             this.ngZone.run(() => this.router.navigateByUrl('/products'))
         });
     }
