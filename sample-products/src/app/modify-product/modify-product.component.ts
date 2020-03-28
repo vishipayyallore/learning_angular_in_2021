@@ -15,7 +15,7 @@ export class ModifyProductComponent implements OnInit {
     product: ProductDto;
     productForm: FormGroup;
 
-    constructor(private route: ActivatedRoute, private productsService: ProductsService, 
+    constructor(private route: ActivatedRoute, private productsService: ProductsService,
         private ngZone: NgZone, private router: Router, private formBuilder: FormBuilder) {
         this.productForm = this.formBuilder.group({
             id: '',
@@ -44,6 +44,6 @@ export class ModifyProductComponent implements OnInit {
             this.ngZone.run(() => this.router.navigateByUrl('/products'))
         });
     }
-    
+
 
 }

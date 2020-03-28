@@ -4,25 +4,29 @@
         <!-- Form -->
         <div class="col-md-12" *ngIf="product">
             <form [formGroup]="productForm" (ngSubmit)="onModify(product.id, productForm.value)" novalidate>
-                
+
                 <div class="form-group divflex">
                     <label class="element">Id: </label>
-                    <input type="text" formControlName="id" class="form-control element" [(ngModel)]="product.id" maxlength="5">
+                    <input type="text" formControlName="id" class="form-control element" [(ngModel)]="product.id"
+                        maxlength="5">
                 </div>
-    
+
                 <div class="form-group divflex">
                     <label class="element">Name: </label>
-                    <input type="text" formControlName="name" class="form-control element" [(ngModel)]="product.name" maxlength="50">
+                    <input type="text" formControlName="name" class="form-control element" [(ngModel)]="product.name"
+                        maxlength="50">
                 </div>
 
                 <div class="form-group divflex">
                     <label class="element">Price: </label>
-                    <input type="text" formControlName="price" class="form-control element" [(ngModel)]="product.price" maxlength="10">
+                    <input type="text" formControlName="price" class="form-control element" [(ngModel)]="product.price"
+                        maxlength="10">
                 </div>
 
                 <div class="form-group divflex">
                     <label class="element">Description : </label>
-                    <input type="text" formControlName="description" class="form-control element" [(ngModel)]="product.description" maxlength="50">
+                    <input type="text" formControlName="description" class="form-control element"
+                        [(ngModel)]="product.description" maxlength="50">
                 </div>
 
                 <button type="submit" class="btn btn-success element">Modify Product</button>

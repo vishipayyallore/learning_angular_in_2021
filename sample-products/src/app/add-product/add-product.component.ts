@@ -15,26 +15,26 @@ export class AddProductComponent implements OnInit {
     productForm: FormGroup;
 
     constructor(private productsService: ProductsService, private formBuilder: FormBuilder, private ngZone: NgZone,
-        private router: Router,) { 
+        private router: Router, ) {
         this.productForm = this.formBuilder.group({
-			id: '',
+            id: '',
             name: '',
             price: '',
-            description: ''            
-		});
+            description: ''
+        });
     }
 
     ngOnInit(): void {
     }
 
     onSubmit(productData: ProductDto): void {
-		// Process Checkout Data here
-		console.warn(`Your order has been submitted with Name: ${productData.name} Address: ${productData.description}`);
+        // Process Checkout Data here
+        console.warn(`Your order has been submitted with Name: ${productData.name} Address: ${productData.description}`);
 
         this.productsService.CreateProduct(productData).subscribe(res => {
             console.log('Product added!')
             this.ngZone.run(() => this.router.navigateByUrl('/products'))
-          });
+        });
     }
-    
+
 }

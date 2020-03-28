@@ -22,7 +22,7 @@ export class ProductsListComponent implements OnInit {
 		this.productsService.GetProducts()
 			.subscribe((data: ProductDto[]) => {
 				this.productsList = data;
-		  });
+			});
 	}
 
 }

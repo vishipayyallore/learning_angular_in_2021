@@ -14,22 +14,22 @@ import { ProductsService } from './services/products.service';
 import { DeleteProductComponent } from './delete-product/delete-product.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopBandComponent,
-    ProductsListComponent,
-    LandingPageComponent,
-    AddProductComponent,
-    ModifyProductComponent,
-    DeleteProductComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    AppRoutingModule
-  ],
-  providers: [ProductsService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        TopBandComponent,
+        ProductsListComponent,
+        LandingPageComponent,
+        AddProductComponent,
+        ModifyProductComponent,
+        DeleteProductComponent
+    ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        AppRoutingModule
+    ],
+    providers: [ProductsService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
