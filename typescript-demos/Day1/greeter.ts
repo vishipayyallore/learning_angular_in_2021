@@ -22,8 +22,5 @@ function greeter(person: Person) {
 
 let user = new Student("Shiva", "Sai");
 
-// document.body.innerText = greeter(user);
-
-let htmlElement;
-htmlElement = document.getElementById("contentFromTsFile") as HTMLDivElement;
+let htmlElement = document.getElementById("contentFromTsFile") as HTMLDivElement;
 htmlElement.innerText = greeter(user);
