@@ -24,3 +24,8 @@ let user = new Student("Shiva", "Sai");
 
 let htmlElement = document.getElementById("contentFromTsFile") as HTMLDivElement;
 htmlElement.innerText = greeter(user);
+
+function setTextBoxMessage() {
+    let textBoxMessage = document.getElementById("textBoxMessage") as HTMLInputElement;
+    textBoxMessage.value = user.fullName;
+}
