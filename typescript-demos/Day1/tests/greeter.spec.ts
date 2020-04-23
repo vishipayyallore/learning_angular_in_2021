@@ -4,6 +4,7 @@
 /// <reference types="jest" />
 
 import * as Greeter from "../src/greeter";
+// const Greeter = require("../src/greeter");
 
 describe('Main Test for Greeter', () => {
 

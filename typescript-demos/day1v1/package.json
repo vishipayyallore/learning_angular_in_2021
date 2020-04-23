@@ -1,0 +1,11 @@
+{
+  "name": "day1v1",
+  "version": "1.0.1",
+  "description": "Simple TypeScript and Html demo",
+  "main": "greeter.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "Viswanatha Swamy",
+  "license": "ISC"
+}
