@@ -4,15 +4,24 @@
     "description": "",
     "main": "greeter.js",
     "scripts": {
+        "start": "tsc && node dist/app.js",
         "build": "tsc",
-        "test": "jest"
+        "test": "jest --watch",
+        "coverage": "jest --coverage"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@types/jest": "^25.2.1",
+        "commonjs": "0.0.1",
         "jest": "^25.4.0",
+        "nodemon": "^2.0.3",
         "ts-jest": "^25.4.0",
         "typescript": "^3.8.3"
+    },
+    "dependencies": {
+        "@types/node": "^13.13.2",
+        "fs": "0.0.1-security",
+        "http": "0.0.1-security"
     }
 }

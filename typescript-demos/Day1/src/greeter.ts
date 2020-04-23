@@ -20,10 +20,10 @@ export function greeter(person: Person) {
     return `Hello ${person.firstName} ${person.lastName}`;
 }
 
-let user = new Student("Shiva", "Sai");
+const user = new Student("Shiva", "Sai");
 
 
-function setTextBoxMessage() {
+export function setTextBoxMessage() {
     let htmlElement = document.getElementById("contentFromTsFile") as HTMLDivElement;
     htmlElement.innerText = greeter(user);
 
