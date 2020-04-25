@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+}
+
+.contentForPerson {
+    color: coral;
+    border: cornflowerblue;
+    border-style: solid;
+}
+
+.contentForStudent {
+    color: rgb(27, 231, 105);
+    border: rgb(228, 206, 13);
+    border-style: solid;
+}
