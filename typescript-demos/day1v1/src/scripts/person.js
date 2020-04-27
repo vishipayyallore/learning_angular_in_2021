@@ -7,12 +7,12 @@ function Person(name, gender) {
     this.gender = gender;
 
     // Methods
-    this.getPersonDetails = function() {
+    this.getPersonDetails = function () {
         return `Name: ${this.name} | Gender: ${this.gender}`;
     };
 }
 
-Person.prototype.getPersonDetailsV1 = function() {
+Person.prototype.getPersonDetailsV1 = function () {
     return `Name: ${this.name} | Gender: ${this.gender}`;
 };
 
