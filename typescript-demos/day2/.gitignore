@@ -41,7 +41,4 @@ testem.log
 .DS_Store
 Thumbs.db
 !.gitkeep
-sample-products/.env
-typescript-demos/Day1/.vs/Day1/config/applicationhost.config
-typescript-demos/Day1/.vs/ProjectSettings.json
-typescript-demos/Day1/.vs/slnx.sqlite
+
