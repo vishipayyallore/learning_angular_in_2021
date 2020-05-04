@@ -34,6 +34,10 @@
             <button type="button" class="btn btn-primary active" onclick="setTextBoxMessage()">
                 Populate TextBox
             </button>
+
+            <input type="button" value="Call Greeting" onclick="greetObject.greet();" />
+            <input type="button" value="Call Student" onclick="callGreeter()" />
+            
         </div>
     </main>
 
@@ -55,6 +59,15 @@
 
     <!-- Custom JavaScript files for this File -->
     <script type="text/JavaScript" src="../dist/greeter.js"></script>
+    <script type="text/JavaScript" src="../dist/Greeting.js"></script>
+
+    <script type="text/javascript">
+        function callGreeter()
+        {
+            console.log(student1.greeter());
+        }
+    </script>
+
 </body>
 
 </html>
