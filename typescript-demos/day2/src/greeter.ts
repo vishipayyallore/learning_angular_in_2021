@@ -1,12 +1,8 @@
 "use strict";
 
-interface Person {
-    firstName: string;
+import { Person } from "./person";
 
-    lastName: string;
-}
-
-class Student {
+export class Student {
     fullName: string = "";
 
     constructor(public firstName: string, public lastName: string) {
@@ -17,12 +13,17 @@ class Student {
         return `Student Information: ${this.firstName} ${this.lastName}`;
     }
 
+
 }
 
 var student1 = new Student("Shiva", "Sai");
+var person1 = new Student("Soumya", "Swain");
 
-function setTextBoxMessage() {
+export function setTextBoxMessage() {
     let textBoxMessage = document.getElementById("textBoxMessage") as HTMLInputElement;
     textBoxMessage.value = student1.fullName;
 }
 
+export function greetPerson(person: Person) : string {
+    return `Hello Person: ${person.firstName} ${person.lastName}`;
+}

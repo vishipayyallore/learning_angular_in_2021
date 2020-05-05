@@ -1,6 +1,6 @@
 "use strict";
 
-class Greeting
+export class Greeting
 {
     greet(): void
     {
