@@ -1,0 +1,17 @@
+{
+    "name": "day2",
+    "version": "1.0.1",
+    "description": "Sample TypeScript Programs",
+    "main": "index.js",
+    "scripts": {
+        "start": "tsc && node dist/app.js",
+        "build": "tsc",
+        "test": "jest --watch",
+        "coverage": "jest --coverage"
+    },
+    "author": "Viswanatha Swamy",
+    "license": "ISC",
+    "dependencies": {
+        "typescript": "^3.8.3"
+    }
+}
