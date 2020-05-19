@@ -1,1 +1,9 @@
-<p>product works!</p>
+<h1>The Products List</h1>
+
+<button (click)="valueForButton = 'Got Modified from Button'" [disabled]="isButtonDisabled">Change Now</button>
+
+<p>{{productName}}</p>
+
+<p>{{valueForConstructor}}</p>
+
+<p>{{valueForButton}}</p>
