@@ -2,13 +2,16 @@
 <div class="toolbar" role="banner">
   <span>Todo Application</span>
   <div class="spacer"></div>
+  <a href="/home">Home</a>
+  <a href="/products">Products</a>
 </div>
 
 <div class="content" role="main">
 
   <div>
-    <app-product></app-product>
+    <router-outlet></router-outlet>
   </div>
+  
   <!-- Footer -->
   <footer>
     Footer: Sample Application 2020
@@ -16,4 +19,3 @@
 
 </div>
 
-<router-outlet></router-outlet>
