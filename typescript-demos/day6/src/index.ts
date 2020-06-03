@@ -1,14 +1,11 @@
+import { Promise } from 'es6-promise';
 
+const one = new Promise<string>((resolve, reject) => {
+    resolve('Hello');
+});
+// const two = one.then(value => { });
+console.log(one);
 
-function asyncFun() {
-    const promise = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("Console from promise function");
-            resolve();
-        }, 3000);
-    });
-    return promise;
-}
 
 /*
 
