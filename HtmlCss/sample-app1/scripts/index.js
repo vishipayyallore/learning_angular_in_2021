@@ -76,3 +76,12 @@ function showDataTypeBehaviour() {
 }
 
 
+function changeElementType() {
+    const content = 'This is the best way';
+
+    var spanElement = document.getElementById('spanForList');
+    // alert(spanElement.innerHTML);
+    spanElement.innerHTML = `<ul>${content}</ul>`;
+
+}
+
