@@ -77,11 +77,12 @@ function showDataTypeBehaviour() {
 
 
 function changeElementType() {
-    const content = 'This is the best way';
 
-    var spanElement = document.getElementById('spanForList');
-    // alert(spanElement.innerHTML);
-    spanElement.innerHTML = `<ul>${content}</ul>`;
+    let spanToBeReplaced = document.getElementById('spanToBeReplaced');
+    var parentSpanElement = document.getElementById('spanForChildElement');
+    const content = spanToBeReplaced.innerText;
+
+    parentSpanElement.innerHTML = `<u>${content}</u>`;
 
 }
 
