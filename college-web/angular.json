@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "college-web:build"
+            "browserTarget": "college-web:build",
+            "port": 5003
           },
           "configurations": {
             "production": {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "college-web"
+    }
+  },
+  "defaultProject": "college-web",
+  "cli": {
+    "analytics": "cbf66ca8-955e-495d-a366-a9a2842f8716"
+  }
 }
