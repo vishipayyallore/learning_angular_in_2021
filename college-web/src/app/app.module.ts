@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,7 @@ import { SideNavbarComponent } from './components/side-navbar/side-navbar.compon
 import { PageNotfoundComponent } from './components/page-notfound/page-notfound.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ProfessorsListComponent } from './components/professors-list/professors-list.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +19,13 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     SideNavbarComponent,
     PageNotfoundComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProfessorsListComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
