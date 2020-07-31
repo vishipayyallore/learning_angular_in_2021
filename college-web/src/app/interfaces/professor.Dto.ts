@@ -1,7 +1,9 @@
+import { Guid } from "guid-typescript";
+
 export interface ProfessorDto {
-  id: number;
+  professorId: Guid;
   name: string;
-  price: number;
-  description: string;
+  doj: Date;
+  Teaches: string;
 }
 

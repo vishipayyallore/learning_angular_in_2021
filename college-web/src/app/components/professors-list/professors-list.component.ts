@@ -13,11 +13,14 @@ export class ProfessorsListComponent implements OnInit {
 
   constructor(private professorsService: ProfessorsService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.loadAllProfessors();
+  }
 
-  loadProducts() {
+  loadAllProfessors() {
     this.professorsService.GetAllProfessors().subscribe((data: ProfessorDto[]) => {
       this.professorsList = data;
+      console.log(this.professorsList);
     });
   }
 }
