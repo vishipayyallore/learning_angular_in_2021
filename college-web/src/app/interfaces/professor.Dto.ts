@@ -4,6 +4,6 @@ export interface ProfessorDto {
   professorId: Guid;
   name: string;
   doj: Date;
-  Teaches: string;
+  teaches: string;
 }
 

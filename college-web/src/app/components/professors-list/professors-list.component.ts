@@ -18,7 +18,8 @@ export class ProfessorsListComponent implements OnInit {
   }
 
   loadAllProfessors() {
-    this.professorsService.GetAllProfessors().subscribe((data: ProfessorDto[]) => {
+    this.professorsService.GetAllProfessors()
+    .subscribe((data: ProfessorDto[]) => {
       this.professorsList = data;
       console.log(this.professorsList);
     });
