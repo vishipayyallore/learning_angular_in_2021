@@ -1,1 +1,48 @@
-<p>add-book works!</p>
+<div class="card shadow mt-2 mb-2">
+    <div class="card-header py-1">
+        <h4 class="PageTitle">Add Book</h4>
+    </div>
+    <div class="card-body container py-2">
+
+        <div class="col-md-8 mb-4 shadow px-2 py-1">
+            <form [formGroup]="bookForm" novalidate>
+
+                <div class="form-group divflex labelAndTextbox">
+                    <label class="element col-md-2">Title: </label>
+                    <input type="text" formControlName="title" class="form-control element" maxlength="50">
+                </div>
+
+                <div class="form-group divflex labelAndTextbox">
+                    <label class="element col-md-2">Author: </label>
+                    <input type="text" formControlName="author" class="form-control element" maxlength="50">
+                </div>
+
+                <div class="form-group divflex labelAndTextbox">
+                    <label class="element col-md-2">ISBN: </label>
+                    <input type="text" formControlName="isbn" class="form-control element" maxlength="30">
+                </div>
+
+                <div class="form-group divflex labelAndTextbox">
+                    <label class="element col-md-2">Pages: </label>
+                    <input type="number" formControlName="pages" class="form-control element" maxlength="5">
+                </div>
+
+                <div class="form-group divflex labelAndTextbox">
+                    <label class="element col-md-2">Active : </label>
+                    <div class="col-sm-1">
+                        <input type="checkbox" formControlName="isActive" class="form-control element ml-2">
+                    </div>
+                </div>
+
+                <div class="form-group divflex labelAndTextbox ml-3">
+                    <button type="submit" class="btn btn-primary shadow">
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+                    <button type="button" class="btn btn-maincolor ml-2 shadow" [routerLink]="['/books']">
+                        <i class="fa fa-table" aria-hidden="true"></i> List</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>

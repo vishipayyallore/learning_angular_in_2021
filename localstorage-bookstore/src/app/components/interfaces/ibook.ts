@@ -1,6 +1,6 @@
 
 export interface Ibook {
-    
+
     id: string;
 
     pictureUrl?: string;
@@ -12,4 +12,6 @@ export interface Ibook {
     ISBN: string;
 
     pages: number;
+
+    isActive: boolean;
 }

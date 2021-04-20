@@ -45,6 +45,7 @@ ng g c components/shared/page-notfound
 ### Create a Service to interact with Local Storage
 ```
 ng g s components/services/localstorage
+ng g s components/services/books
 ```
 
 ### Create a interface for Book
