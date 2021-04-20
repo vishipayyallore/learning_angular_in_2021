@@ -18,7 +18,7 @@ export class AddBookComponent implements OnInit {
       author: '',
       isbn: '',
       pages: 0.0,
-      isactive: false
+      isActive: false
     });
 
   }

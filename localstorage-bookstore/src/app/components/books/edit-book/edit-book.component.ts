@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-book',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditBookComponent implements OnInit {
 
-  constructor() { }
+  bookForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.bookForm = this.formBuilder.group({
+      title: '',
+      author: '',
+      isbn: '',
+      pages: 0.0,
+      isActive: false
+    });
+  }
 
   ngOnInit(): void {
   }
