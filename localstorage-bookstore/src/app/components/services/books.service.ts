@@ -23,7 +23,7 @@ export class BooksService {
       (subscriber: Subscriber<Ibook[]>) => {
         setTimeout(() => {
           subscriber.next(this.booksList)
-          subscriber.complete();
+          //subscriber.complete();
         }, 500);
       });
 
