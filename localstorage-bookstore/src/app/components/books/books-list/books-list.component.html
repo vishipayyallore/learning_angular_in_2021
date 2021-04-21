@@ -2,7 +2,13 @@
     <div class="card-header py-1">
         <h4 class="PageTitle">Books List</h4>
     </div>
-    <div class="card-body">
+    <div class="container py-2" *ngIf="!booksList">
+        <h4 class="spinner">Loading Books List ...</h4>
+        <span class="spinner">
+            <i class="fa fa-spinner fa-spin fa-4x"></i>
+        </span>
+    </div>
+    <div class="card-body" *ngIf="booksList">
         <div>
             <a [routerLink]="['/add-book']" class="float">
                 <i class="fa fa-plus float-margintop"></i>
