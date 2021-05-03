@@ -29,6 +29,7 @@ export class BooksListComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    // console.log('Destroying ...');
     this.booksServiceSubscription.unsubscribe()
   }
 
