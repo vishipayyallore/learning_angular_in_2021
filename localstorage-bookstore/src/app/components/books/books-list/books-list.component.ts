@@ -28,10 +28,6 @@ export class BooksListComponent implements OnInit, OnDestroy {
         console.log(this.booksList);
       });
 
-    // this.router.events.subscribe(
-    //   event => {
-    //     this.ngOnDestroy();
-    //   });
   }
 
   ngOnDestroy() {
