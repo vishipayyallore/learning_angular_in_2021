@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs/internal/Subscription';
 
 import { Ibook } from '../../interfaces/ibook';
@@ -17,7 +18,7 @@ export class BooksListComponent implements OnInit, OnDestroy {
   booksServiceSubscription: Subscription;
 
   // Dependency Injection (Construction Injection)
-  constructor(private booksService: BooksService) {
+  constructor(private booksService: BooksService, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -26,10 +27,15 @@ export class BooksListComponent implements OnInit, OnDestroy {
         this.booksList = data;
         console.log(this.booksList);
       });
+
+    // this.router.events.subscribe(
+    //   event => {
+    //     this.ngOnDestroy();
+    //   });
   }
 
   ngOnDestroy() {
-    // console.log('Destroying ...');
+    console.log('Destroying ...');
     this.booksServiceSubscription.unsubscribe()
   }
 

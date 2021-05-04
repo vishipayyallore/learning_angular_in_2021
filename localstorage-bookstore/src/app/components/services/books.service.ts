@@ -13,7 +13,6 @@ export class BooksService {
   booksList: Ibook[];
 
   constructor(private localStorageService: LocalstorageService) {
-
   }
 
   getAllBooks(): Observable<Ibook[]> {
@@ -22,8 +21,8 @@ export class BooksService {
     return new Observable<Ibook[]>(
       (subscriber: Subscriber<Ibook[]>) => {
         setTimeout(() => {
-          subscriber.next(this.booksList);
-          // subscriber.complete();
+          subscriber.next(this.booksList)
+          //subscriber.complete();
         }, 500);
       });
 
