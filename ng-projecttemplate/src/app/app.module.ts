@@ -7,6 +7,8 @@ import { DashboardComponent } from './components/home/dashboard/dashboard.compon
 import { TopNavbarComponent } from './components/shared/top-navbar/top-navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { PageNotfoundComponent } from './components/shared/page-notfound/page-notfound.component';
+import { AboutusComponent } from './components/home/aboutus/aboutus.component';
+import { ContactusComponent } from './components/home/contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { PageNotfoundComponent } from './components/shared/page-notfound/page-no
     DashboardComponent,
     TopNavbarComponent,
     FooterComponent,
-    PageNotfoundComponent
+    PageNotfoundComponent,
+    AboutusComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,

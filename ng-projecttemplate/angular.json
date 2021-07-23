@@ -74,7 +74,8 @@
               "browserTarget": "ng-projecttemplate:build:production"
             },
             "development": {
-              "browserTarget": "ng-projecttemplate:build:development"
+              "browserTarget": "ng-projecttemplate:build:development",
+              "port": 4005
             }
           },
           "defaultConfiguration": "development"

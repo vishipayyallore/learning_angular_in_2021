@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './components/home/dashboard/dashboard.component';
+import { AboutusComponent } from './components/home/aboutus/aboutus.component';
+import { ContactusComponent } from './components/home/contactus/contactus.component';
 import { PageNotfoundComponent } from './components/shared/page-notfound/page-notfound.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'contactus', component: ContactusComponent },
   { path: 'pagenotfound', component: PageNotfoundComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', redirectTo: 'pagenotfound', pathMatch: 'full' }
