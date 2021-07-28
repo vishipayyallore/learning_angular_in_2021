@@ -1,7 +1,15 @@
 # NgProjecttemplate
 
+```TypeScript
+
+ng g module components/home --module=app
+ng g module components/home/home-routing --flat --module=app
+
+ng g module components/shared --module=app
+ng g module components/shared/shared-routing --flat --module=app
 ```
-For example:
+
+```TypeScript
   Cypress: ng add @cypress/schematic
   Nightwatch: ng add @nightwatch/schematics
   WebdriverIO: ng add @wdio/schematics
