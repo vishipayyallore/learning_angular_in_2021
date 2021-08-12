@@ -7,6 +7,9 @@ ng g module components/home/home-routing --flat --module=app
 
 ng g module components/shared --module=app
 ng g module components/shared/shared-routing --flat --module=app
+
+ng g module components/servers --module=app
+ng g module components/servers/servers-routing --flat --module=app
 ```
 
 ```TypeScript

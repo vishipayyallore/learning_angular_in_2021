@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ServerComponent } from './components/server/server.component';
-
 const routes: Routes = [
 	{
 		path: 'home',
@@ -12,7 +10,10 @@ const routes: Routes = [
 		path: 'pagenotfound',
 		loadChildren: () => import('./components/shared/shared.module').then(m => m.SharedModule),
 	},
-	{ path: 'servers', component: ServerComponent },
+	{
+		path: 'servers',
+		loadChildren: () => import('./components/servers/servers.module').then(m => m.ServersModule),
+	},
 	{ path: '', redirectTo: 'home/dashboard', pathMatch: 'full' },
 	{ path: '**', redirectTo: 'pagenotfound', pathMatch: 'full' }
 ];
