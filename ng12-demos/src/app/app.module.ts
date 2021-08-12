@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './components/shared/shared.module';
-import { ServersModule } from './components/servers/servers.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { ServersModule } from './components/servers/servers.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    ServersModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
