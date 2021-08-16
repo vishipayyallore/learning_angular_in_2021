@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { ServerComponent } from './server/server.component';
 import { ServersRoutingModule } from './servers-routing.module';
+import { ServersComponent } from './servers/servers.component';
 
 @NgModule({
   declarations: [
-    ServerComponent
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     CommonModule,
