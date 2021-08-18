@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { DemosLandingComponent } from './components/demos/demos-landing/demos-landing.component';
+
 const routes: Routes = [
 	{
 		path: 'home',
@@ -14,6 +16,7 @@ const routes: Routes = [
 		path: 'servers',
 		loadChildren: () => import('./components/servers/servers.module').then(m => m.ServersModule),
 	},
+	{ path: 'demos', component: DemosLandingComponent},
 	{ path: '', redirectTo: 'home/dashboard', pathMatch: 'full' },
 	{ path: '**', redirectTo: 'pagenotfound', pathMatch: 'full' }
 ];
