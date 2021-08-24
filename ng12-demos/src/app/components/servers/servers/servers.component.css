@@ -11,3 +11,7 @@ hr {
 .main-container {
     background-color: aliceblue;
 }
+
+.child-container {
+    background-color: cornsilk;
+}

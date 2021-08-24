@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { LandingComponent } from './landing/landing.component';
+import { ServerComponent } from './server/server.component';
 
 const routes: Routes = [
-  { path: '', component: ServersComponent },
-  { path: 'server', component: ServerComponent },
+  {
+    path: '', component: ServersComponent, children: [
+      { path: 'landing', component: LandingComponent },
+      { path: 'server', component: ServerComponent },
+    ]
+  },
+
 ];
 
 @NgModule({
