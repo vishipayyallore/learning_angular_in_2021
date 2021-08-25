@@ -13,10 +13,14 @@ const routes: Routes = [
 		loadChildren: () => import('./components/shared/shared.module').then(m => m.SharedModule),
 	},
 	{
+		path: 'products',
+		loadChildren: () => import('./components/products/products.module').then(m => m.ProductsModule),
+	},
+	{
 		path: 'servers',
 		loadChildren: () => import('./components/servers/servers.module').then(m => m.ServersModule),
 	},
-	{ path: 'demos', component: DemosLandingComponent},
+	{ path: 'demos', component: DemosLandingComponent },
 	{ path: '', redirectTo: 'home/dashboard', pathMatch: 'full' },
 	{ path: '**', redirectTo: 'pagenotfound', pathMatch: 'full' }
 ];

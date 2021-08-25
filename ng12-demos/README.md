@@ -12,6 +12,10 @@ ng g module components/servers --module=app
 ng g module components/servers/servers-routing --flat --module=app
 
 ng g c components/servers/servers --module=servers --dry-run
+
+ng g module components/products --module=app --dry-run
+ng g module components/products/products-routing --flat --module=products --dry-run
+
 ```
 
 ```TypeScript
