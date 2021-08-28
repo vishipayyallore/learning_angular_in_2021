@@ -20,7 +20,10 @@ const routes: Routes = [
 		path: 'servers',
 		loadChildren: () => import('./components/servers/servers.module').then(m => m.ServersModule),
 	},
-	{ path: 'demos', component: DemosLandingComponent },
+	{ 
+		path: 'demos', 
+		loadChildren: () => import('./components/demos/demos.module').then(m => m.DemosModule),
+	},
 	{ path: '', redirectTo: 'home/dashboard', pathMatch: 'full' },
 	{ path: '**', redirectTo: 'pagenotfound', pathMatch: 'full' }
 ];

@@ -12,7 +12,6 @@ const routes: Routes = [
       { path: 'server', component: ServerComponent },
     ]
   },
-
 ];
 
 @NgModule({
