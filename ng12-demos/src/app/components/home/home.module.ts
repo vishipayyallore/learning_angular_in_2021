@@ -5,12 +5,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
+    PageNotfoundComponent
   ],
   imports: [
     CommonModule,

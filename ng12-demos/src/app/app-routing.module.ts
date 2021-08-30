@@ -25,7 +25,7 @@ const routes: Routes = [
 		loadChildren: () => import('./components/demos/demos.module').then(m => m.DemosModule),
 	},
 	{ path: '', redirectTo: 'home/dashboard', pathMatch: 'full' },
-	{ path: '**', redirectTo: 'pagenotfound', pathMatch: 'full' }
+	{ path: '**', redirectTo: 'home/pagenotfound', pathMatch: 'full' }
 ];
 
 @NgModule({
