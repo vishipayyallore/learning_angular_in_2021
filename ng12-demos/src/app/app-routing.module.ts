@@ -1,16 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DemosLandingComponent } from './components/demos/demos-landing/demos-landing.component';
-
 const routes: Routes = [
 	{
 		path: 'home',
 		loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule),
-	},
-	{
-		path: 'pagenotfound',
-		loadChildren: () => import('./components/shared/shared.module').then(m => m.SharedModule),
 	},
 	{
 		path: 'products',
@@ -20,8 +14,8 @@ const routes: Routes = [
 		path: 'servers',
 		loadChildren: () => import('./components/servers/servers.module').then(m => m.ServersModule),
 	},
-	{ 
-		path: 'demos', 
+	{
+		path: 'demos',
 		loadChildren: () => import('./components/demos/demos.module').then(m => m.DemosModule),
 	},
 	{ path: '', redirectTo: 'home/dashboard', pathMatch: 'full' },
