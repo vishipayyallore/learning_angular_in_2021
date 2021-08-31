@@ -7,8 +7,8 @@ import { ServerComponent } from './server/server.component';
 
 const routes: Routes = [
   {
-    path: '', component: ServersComponent, children: [
-      { path: 'landing', component: LandingComponent },
+    path: '', component: LandingComponent, children: [
+      { path: 'servers', component: ServersComponent },
       { path: 'server', component: ServerComponent },
     ]
   },

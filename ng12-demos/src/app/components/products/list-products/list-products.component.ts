@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ListProductsComponent implements OnInit {
 
   pageTitle = 'Product List';
+  errorMessage: string = '';
 
+  listFilter = 'cart';
+  
   constructor() { }
 
   ngOnInit(): void {

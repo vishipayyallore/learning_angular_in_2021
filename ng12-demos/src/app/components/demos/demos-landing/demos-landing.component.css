@@ -1,17 +1,12 @@
-
-h1 {
-    color: purple;
-}
-
 hr {
-    height: 2px;
-    background-color: rgb(2, 113, 211);
+  height: 2px;
+  background-color: rgb(2, 113, 211);
 }
 
 .main-container {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 .child-container {
-    background-color: cornsilk;
+  background-color: cornsilk;
 }

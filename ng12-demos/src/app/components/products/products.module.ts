@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { ListProductsComponent } from './list-products/list-products.component';
 import { ProductsRoutingModule } from './products-routing.module';
@@ -10,6 +11,7 @@ import { ProductsRoutingModule } from './products-routing.module';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     ProductsRoutingModule
   ]
 })

@@ -1,3 +1,12 @@
-h1 {
-  color: blueviolet;
+hr {
+  height: 2px;
+  background-color: rgb(2, 113, 211);
+}
+
+.main-container {
+  background-color: aliceblue;
+}
+
+.child-container {
+  background-color: cornsilk;
 }
