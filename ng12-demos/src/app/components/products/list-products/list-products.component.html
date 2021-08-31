@@ -1,26 +1,64 @@
 <div class='card shadow'>
 
-    <div class='card-header'>
-        <h1>{{pageTitle}}</h1>
+  <div class='card-header'>
+    <h1>{{pageTitle}}</h1>
+  </div>
+
+  <div class='card-body'>
+
+    <div class='row'>
+      <div class='col-md-2'>Filter by:</div>
+      <div class='col-md-4'>
+        <input type='text' [(ngModel)]='listFilter' />
+      </div>
+      <div class='col-md-6' *ngIf='listFilter'>
+        <h6>Filtered by: {{listFilter}}</h6>
+      </div>
     </div>
 
-    <div class='card-body'>
+    <div class='table-responsive table-striped table-bordered table-hover shadow'>
 
-        <div class='row'>
-            <div class='col-md-2'>Filter by:</div>
-            <div class='col-md-4'>
-              <input type='text' [(ngModel)]='listFilter' />
-            </div>
-            <div class='col-md-6' *ngIf='listFilter'>
-              <h6>Filtered by: {{listFilter}}</h6>
-            </div>
-          </div>
-          
+      <table class='table px-0 py-0' *ngIf="products && products.length">
+        <thead>
+          <tr>
+            <th style="text-align: center; vertical-align: middle;">
+              <button class='btn btn-primary shadow' (click)='toggleImage()'
+                title="{{showImage ? 'Hide' : 'Show'}} Image">
+                <i class="fa {{showImage ? 'fa-eye-slash' : 'fa-eye'}} fa-1x" aria-hidden="true"></i>
+              </button>
+            </th>
+            <th>Product</th>
+            <th>Code</th>
+            <th>Available</th>
+            <th>Price</th>
+            <th>5 Star Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let product of products'>
+            <td style="text-align: center; vertical-align: middle;">
+              <img *ngIf='showImage' class="rounded-circle" [src]='product.imageUrl' [title]='product.productName'
+                [style.width.px]='imageWidth' [style.margin.px]='imageMargin' />
+            </td>
+            <td>
+              {{product.productName}}
+            </td>
+            <td>{{product.productCode | lowercase}}</td>
+            <td>{{product.releaseDate | date}}</td>
+            <td style="text-align: right;">{{product.price | currency: 'INR' : 'symbol' : '1.2-2'}}</td>
+            <td style="text-align: center;">
+              {{product.starRating}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
+
+  </div>
 
 </div>
 
-<div *ngIf='errorMessage'
-     class='alert alert-danger'>
+<div *ngIf='errorMessage' class='alert alert-danger'>
   Error: {{ errorMessage }}
 </div>

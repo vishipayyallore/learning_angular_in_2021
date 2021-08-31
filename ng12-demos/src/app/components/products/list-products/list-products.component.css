@@ -1,0 +1,27 @@
+thead {
+  color: navy;
+}
+
+td {
+  color: navy;
+}
+
+div {
+  color: Navy;
+}
+
+.rounded-circle {
+  border: 1px solid;
+  /* border-color: blue; */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+img {
+  top: 0;
+  left: 0;
+  width: 50px !important;
+  height: 50px !important;
+  box-shadow: 3px 3px 3px rgb(5, 43, 126) !important;
+}
