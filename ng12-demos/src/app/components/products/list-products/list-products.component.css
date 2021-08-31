@@ -2,6 +2,10 @@ thead {
   color: navy;
 }
 
+tr {
+  height: 69px;
+}
+
 td {
   color: navy;
 }
