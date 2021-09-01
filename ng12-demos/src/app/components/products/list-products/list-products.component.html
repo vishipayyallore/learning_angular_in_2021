@@ -6,7 +6,7 @@
 
   <div class='card-body'>
 
-    <div class='row'>
+    <div class='row py-3'>
       <div class='col-md-2'>Filter by:</div>
       <div class='col-md-4'>
         <input type='text' [(ngModel)]='listFilter' />
@@ -21,10 +21,10 @@
       <table class='table px-0 py-0' *ngIf="products && products.length">
         <thead>
           <tr>
-            <th style="text-align: center; vertical-align: middle;">
+            <th>
               <button class='btn btn-primary shadow' (click)='toggleImage()'
                 title="{{showImage ? 'Hide' : 'Show'}} Image">
-                <i class="fa {{showImage ? 'fa-eye-slash' : 'fa-eye'}} fa-1x" aria-hidden="true"></i>
+                <i class="fa {{showImage ? 'fa-eye-slash' : 'fa-eye'}} fa-2x" aria-hidden="true"></i>
               </button>
             </th>
             <th>Product</th>
@@ -36,7 +36,7 @@
         </thead>
         <tbody>
           <tr *ngFor='let product of products'>
-            <td style="text-align: center; vertical-align: middle; width: 150px;">
+            <td class="image-display-column-styles">
               <img *ngIf='showImage' class="rounded-circle" [src]='product.imageUrl' [title]='product.productName'
                 [style.width.px]='imageWidth' [style.margin.px]='imageMargin' />
             </td>
@@ -45,8 +45,8 @@
             </td>
             <td>{{product.productCode | lowercase}}</td>
             <td>{{product.releaseDate | date}}</td>
-            <td style="text-align: right;">{{product.price | currency: 'INR' : 'symbol' : '1.2-2'}}</td>
-            <td style="text-align: center;">
+            <td class="currency-column-styles">{{product.price | currency: 'INR' : 'symbol' : '1.2-2'}}</td>
+            <td>
               {{product.starRating}}
             </td>
           </tr>
