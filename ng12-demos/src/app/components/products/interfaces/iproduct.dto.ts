@@ -1,5 +1,9 @@
+import { Guid } from 'guid-typescript';
+
 export interface IProductDto {
-    productId: number; // TODO: Convert this in GUID
+    id: Guid;
+
+    productId: number;
 
     productName: string;
 
