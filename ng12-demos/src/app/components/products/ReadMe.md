@@ -13,10 +13,10 @@ products.json file exists under **data** folder inside the products
 
 ### Products local json-server API
 
-Execute the below mentioned command to execute the json-server
+> 1. Execute the below mentioned command to execute the json-server
+> 1. Path: src\app\core\products\data\products.json
 ```
 json-server --watch products.json
-
 ```
 
 Products will be hosted and can be accessed from URL: http://localhost:3000/products

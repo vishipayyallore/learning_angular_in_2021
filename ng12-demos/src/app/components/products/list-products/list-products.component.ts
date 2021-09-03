@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { IProductDto } from '../interfaces/iproduct.dto';
-import { ProductsService } from '../services/products.service';
+import { IProductDto } from 'src/app/core/products/interfaces/iproduct.dto';
+import { ProductsService } from 'src/app/core/products/services/products.service';
 
 @Component({
   selector: 'sv-list-products',
