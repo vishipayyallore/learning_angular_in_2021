@@ -17,7 +17,12 @@
 > 1. for ... in [Iterate through properties]
 
 ### Binding
-> 1. One way 
-> 1. Two way
+> 1. One way OR Interpolation
 > 1. Property binding bind-styles || [styles]
+    ```
+        <img [src]='product.imageUrl'>
+        <img src='{{product.imageUrl}}'>
+        <img src='http://your.blob.azure.url/{{product.imageUrl}}'>
+    ```
 > 1. Event binding
+> 1. Two way
