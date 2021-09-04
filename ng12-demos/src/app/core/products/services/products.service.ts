@@ -3,8 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 
-import { IProductDto } from '../interfaces/iproduct.dto';
-import { environment } from 'src/environments/environment';
+import { IProductDto } from '@products/interfaces/iproduct.dto';
+import { environment } from '@environments/environment';
 
 const baseUrl = environment.productsWebApiUrl;
 
