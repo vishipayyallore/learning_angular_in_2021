@@ -34,7 +34,7 @@
                 <i class="fa {{showImage ? 'fa-eye-slash' : 'fa-eye'}} fa-2x" aria-hidden="true"></i>
               </button>
             </th>
-            <th>Product</th>
+            <th class="product-name-td-styles">Product</th>
             <th>Code</th>
             <th>Available</th>
             <th>Price</th>
@@ -47,10 +47,10 @@
               <img *ngIf='showImage' class="rounded-circle" [src]='product.imageUrl' [title]='product.productName'
                 [style.width.px]='imageWidth' [style.margin.px]='imageMargin' />
             </td>
-            <td>
+            <td class="product-name-td-styles">
               {{product.productName}}
             </td>
-            <td>{{product.productCode | lowercase}}</td>
+            <td>{{product.productCode | convertToSpaces:'-' | lowercase}}</td>
             <td>{{product.releaseDate | date}}</td>
             <td class="currency-column-styles">{{product.price | currency: 'INR' : 'symbol' : '1.2-2'}}</td>
             <td>

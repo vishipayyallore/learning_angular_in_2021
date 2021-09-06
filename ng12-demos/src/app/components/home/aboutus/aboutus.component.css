@@ -28,7 +28,7 @@ html {
 .about-section {
   padding: 10px;
   text-align: center;
-  background-color: #5a8af1;
+  background-color: #c4d4f7;
   color: white;
 }
 
@@ -53,14 +53,14 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #3f51b5;
   text-align: center;
   cursor: pointer;
   width: 100%;
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: #2f5c8e;
 }
 
 @media screen and (max-width: 650px) {
@@ -76,13 +76,5 @@ img {
 }
 
 .inner-div-styles {
-  background-color: #5a8af1ab;
-}
-
-h1 {
-  color: cornsilk;
-}
-
-p {
-  color: cornsilk;
+  background-color: #e3e8f3;
 }
