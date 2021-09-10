@@ -1,5 +1,6 @@
 .top-nav-bar-overrides {
-  background-color: #3f51b5 !important;
+  /* background-color: #3f51b5 !important; */
+  background-color: #1976d2;
 }
 
 a {
@@ -9,6 +10,12 @@ a {
 
 a:hover {
   color: cyan !important;
+  /* font-weight: bolder; */
+}
+
+.nav-pills .nav-link.active {
+  background-color: #1669bd;
+  /* opacity: 110%; */
 }
 
 .top-row {
@@ -26,4 +33,17 @@ a:hover {
 
 .notif-bell {
   margin: 0 20px 0 16px;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
 }

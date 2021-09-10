@@ -19,6 +19,7 @@ import { NotificationsButtonComponent } from './notifications-button/notificatio
   exports: [
     TopNavbarComponent,
     FooterComponent,
+    NotificationsButtonComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
