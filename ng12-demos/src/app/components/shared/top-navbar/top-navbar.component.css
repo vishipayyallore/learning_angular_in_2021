@@ -19,3 +19,11 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
+.spacer {
+  flex: 1;
+}
+
+.notif-bell {
+  margin: 0 20px 0 16px;
+}
