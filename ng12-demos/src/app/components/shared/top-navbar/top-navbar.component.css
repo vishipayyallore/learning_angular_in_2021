@@ -9,13 +9,13 @@ a {
 }
 
 a:hover {
-  color: cyan !important;
-  /* font-weight: bolder; */
+  /* color: rgb(194, 245, 10) !important; */
+  font-weight: 500;
 }
 
 .nav-pills .nav-link.active {
   background-color: #1669bd;
-  /* opacity: 110%; */
+  font-weight: 500;
 }
 
 .top-row {
