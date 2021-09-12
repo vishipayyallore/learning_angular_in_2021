@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './top-navbar.component.html',
   styleUrls: ['./top-navbar.component.scss']
 })
-export class TopNavbarComponent implements OnInit {
+export class TopNavBarComponent implements OnInit {
 
   notificationsCount = 9;
 
