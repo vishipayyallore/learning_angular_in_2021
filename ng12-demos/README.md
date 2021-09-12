@@ -4,7 +4,29 @@
 ```
 ng new ng12-demos --prefix sv
 
+npm i bootstrap font-awesome guid-typescript
+
+ng g c components/shared/top-navbar --dry-run
+ng g module components/shared --module=app --dry-run
+ng g c components/shared/footer --dry-run
+ng g c components/shared/notifications-button --dry-run
+
 ```
+
+ng g module components/home --module=app
+ng g module components/home/home-routing --flat --module=app
+
+ng g module components/servers --module=app
+ng g module components/servers/servers-routing --flat --module=app
+
+ng g c components/servers/servers --module=servers --dry-run
+
+ng g module components/products --module=app --dry-run
+ng g module components/products/products-routing --flat --module=products --dry-run
+
+ng g module components/demos --dry-run
+ng g module components/demos/demos-routing --flat --module=demos --dry-run
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 

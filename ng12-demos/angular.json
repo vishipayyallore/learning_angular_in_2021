@@ -78,7 +78,8 @@
               "browserTarget": "ng12-demos:build:production"
             },
             "development": {
-              "browserTarget": "ng12-demos:build:development"
+              "browserTarget": "ng12-demos:build:development",
+              "port": 4006
             }
           },
           "defaultConfiguration": "development"

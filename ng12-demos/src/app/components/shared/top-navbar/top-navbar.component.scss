@@ -1,0 +1,17 @@
+.top-nav-bar-overrides {
+  background-color: #1976d2;
+}
+
+a {
+  color: white !important;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: 500;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #1669bd;
+  font-weight: 500;
+}
