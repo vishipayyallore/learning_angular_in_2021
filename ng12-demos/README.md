@@ -1,33 +1,12 @@
-# NgProjecttemplate
+# Ng12Demos
 
-```TypeScript
 
-ng g module components/home --module=app
-ng g module components/home/home-routing --flat --module=app
-
-ng g module components/shared --module=app
-ng g module components/shared/shared-routing --flat --module=app
-
-ng g module components/servers --module=app
-ng g module components/servers/servers-routing --flat --module=app
-
-ng g c components/servers/servers --module=servers --dry-run
-
-ng g module components/products --module=app --dry-run
-ng g module components/products/products-routing --flat --module=products --dry-run
-
-ng g module components/demos --dry-run
-ng g module components/demos/demos-routing --flat --module=demos --dry-run
+```
+ng new ng12-demos --prefix sv
 
 ```
 
-```TypeScript
-  Cypress: ng add @cypress/schematic
-  Nightwatch: ng add @nightwatch/schematics
-  WebdriverIO: ng add @wdio/schematics
-```
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
 ## Development server
 
