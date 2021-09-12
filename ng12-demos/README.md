@@ -25,6 +25,17 @@ ng g c components/home/dashboard
 ng g c components/home/page-notfound
 ```
 
+```
+ng g module components/products --module=app --dry-run
+ng g module components/products/products-routing --flat --module=products --dry-run
+
+ng g c components/products/add-product
+ng g c components/products/delete-product
+ng g c components/products/edit-product
+ng g c components/products/list-products
+ng g c components/products/view-product
+```
+
 ng g module components/home --module=app
 ng g module components/home/home-routing --flat --module=app
 
@@ -33,8 +44,6 @@ ng g module components/servers/servers-routing --flat --module=app
 
 ng g c components/servers/servers --module=servers --dry-run
 
-ng g module components/products --module=app --dry-run
-ng g module components/products/products-routing --flat --module=products --dry-run
 
 ng g module components/demos --dry-run
 ng g module components/demos/demos-routing --flat --module=demos --dry-run
