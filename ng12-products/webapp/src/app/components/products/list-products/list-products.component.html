@@ -59,7 +59,8 @@
                         <td>{{product.releaseDate | date}}</td>
                         <td class="currency-column-styles">{{product.price | currency: 'INR' : 'symbol' : '1.2-2'}}</td>
                         <td>
-                            {{product.starRating}}
+                            <!-- {{product.starRating}} -->
+                            <sv-star-raiting></sv-star-raiting>
                         </td>
                     </tr>
                 </tbody>
