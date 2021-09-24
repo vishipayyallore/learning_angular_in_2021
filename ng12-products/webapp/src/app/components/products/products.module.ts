@@ -6,6 +6,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ListProductsComponent } from './list-products/list-products.component';
 import { ConvertToSpacesPipe } from '@app/core/products/pipes/converttospaces.pipe';
 import { SharedModule } from '@app/components/shared/shared.module';
+import { CoreComponentsModule } from '@app/core/components/core-components.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SharedModule } from '@app/components/shared/shared.module';
   ],
   imports: [
     CommonModule,
+    CoreComponentsModule,
     FormsModule,
     SharedModule,
     ProductsRoutingModule

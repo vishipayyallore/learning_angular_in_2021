@@ -39,7 +39,7 @@ export class ListProductsComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.retrieveAllProducts();
+        this.refreshProducts();
     }
 
     ngOnDestroy(): void {
@@ -49,6 +49,8 @@ export class ListProductsComponent implements OnInit {
 
     retrieveAllProducts() {
         this.showSpinner = true;
+        this.errorMessage = '';
+
         this.subscription = this.productsService.getAllProducts()
             .subscribe({
                 next: (data: IProductDto[]) => {
@@ -81,4 +83,7 @@ export class ListProductsComponent implements OnInit {
         return this.products.length > 0;
     }
 
+    refreshProducts() {
+        this.retrieveAllProducts();
+    }
 }
