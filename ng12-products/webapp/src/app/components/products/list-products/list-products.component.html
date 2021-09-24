@@ -43,6 +43,7 @@
                         <th>Available</th>
                         <th>Price</th>
                         <th>5 Star Rating</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -62,6 +63,19 @@
                         <td>
                             <sv-star-raiting class="star-rating-styles" [currentRating]="product.starRating">
                             </sv-star-raiting>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-between px-2">
+                                <button type="button" class="btn btn-warning btn-sm ml-2 shadow text-white mx-2"
+                                    [routerLink]="['/edit-product', product.productId]" title="Edit Product">
+                                    <i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>
+                                </button>
+                                <!-- <div class="mx-1">&nbsp;</div> -->
+                                <button type="button" class="btn btn-danger btn-sm ml-2 shadow"
+                                    [routerLink]="['/delete-product', product.productId]" title="Delete Product">
+                                    <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+                                </button>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
