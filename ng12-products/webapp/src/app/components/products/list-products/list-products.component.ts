@@ -50,6 +50,7 @@ export class ListProductsComponent implements OnInit {
     retrieveAllProducts() {
         this.showSpinner = true;
         this.errorMessage = '';
+        this.products = [];
 
         this.subscription = this.productsService.getAllProducts()
             .subscribe({

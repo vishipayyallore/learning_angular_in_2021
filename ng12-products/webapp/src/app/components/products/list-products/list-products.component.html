@@ -9,12 +9,12 @@
     <div class='card-header d-flex justify-content-between'>
         <h1>{{pageTitle}}</h1>
         <div class="align-self-center d-flex justify-content-between px-2">
-            <button type="button" class="btn btn-primary btn-sm ml-2 shadow" title="Refresh Products"
+            <button type="button" class="btn btn-secondary btn-sm ml-2 shadow" title="Refresh Products"
                 (click)="refreshProducts()">
                 <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
             </button>
             <div class="px-2">&nbsp;</div>
-            <button type="button" class="btn btn-secondary btn-sm ml-2 shadow" title="Add Product">
+            <button type="button" class="btn btn-primary btn-sm ml-2 shadow" title="Add Product">
                 <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
             </button>
         </div>
@@ -22,12 +22,14 @@
 
     <div class='card-body'>
 
-        <div class="container py-2 d-flex" *ngIf="showSpinner">
+        <!-- <div class="container py-2 d-flex" *ngIf="showSpinner">
             <h1 class="spinner">Loading ... Please wait.</h1>
             <span class="spinner">
                 <i class="fa fa-spinner fa-spin fa-4x"></i>
             </span>
-        </div>
+        </div> -->
+
+        <sv-loader [showSpinner]="showSpinner"></sv-loader>
 
         <ng-container *ngIf="!showSpinner">
             <div class='row py-3' *ngIf="hasProducts">

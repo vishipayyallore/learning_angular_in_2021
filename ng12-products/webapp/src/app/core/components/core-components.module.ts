@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ErrorAlertComponent } from './alerts/error-alert/error-alert.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
 @NgModule({
   declarations: [
-    ErrorAlertComponent
+    ErrorAlertComponent,
+    LoaderComponent
   ],
   exports: [
-    ErrorAlertComponent
+    ErrorAlertComponent,
+    LoaderComponent,
   ],
   imports: [
     CommonModule
