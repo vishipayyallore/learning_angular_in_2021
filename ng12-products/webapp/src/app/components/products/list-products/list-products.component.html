@@ -2,8 +2,6 @@
     Error: {{ errorMessage }}
 </div> -->
 
-<sv-error-alert [errorMessage]="errorMessage"></sv-error-alert>
-
 <div class='card shadow'>
 
     <div class='card-header d-flex justify-content-between'>
@@ -20,7 +18,7 @@
         </div>
     </div>
 
-    <div class='card-body'>
+    <div class='card-body px-2'>
 
         <!-- <div class="container py-2 d-flex" *ngIf="showSpinner">
             <h1 class="spinner">Loading ... Please wait.</h1>
@@ -100,6 +98,8 @@
             </div>
         </ng-container>
 
+        <sv-error-alert [errorMessage]="errorMessage"></sv-error-alert>
     </div>
+
 
 </div>
