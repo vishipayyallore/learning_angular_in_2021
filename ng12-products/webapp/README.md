@@ -31,8 +31,10 @@ ng g module components/products --module=app --dry-run
 ng g module components/products/products-routing --flat --module=products --dry-run
 
 ng g c components/products/list-products
+ng g c components/products/add-product --dry-run
+ng g c components/products/edit-product --dry-run
+ng g c components/products/delete-product --dry-run
 ```
-
 
 ```
 ng g module core/components/core-components --module=app --flat --dry-run   
