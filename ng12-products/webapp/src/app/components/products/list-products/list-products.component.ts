@@ -73,11 +73,13 @@ export class ListProductsComponent implements OnInit {
 
     performFilter(filterBy: string): IProductDto[] {
 
-        return this.allProducts.filter((product: IProductDto) =>
+        const filteredProducts = this.allProducts.filter((product: IProductDto) =>
             product
                 .productName
                 .toLocaleLowerCase()
                 .includes(filterBy.toLocaleLowerCase()));
+
+        return (filteredProducts?.length > 0) ? filteredProducts : this.allProducts;
     }
 
     get hasProducts(): boolean {
