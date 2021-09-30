@@ -16,6 +16,7 @@ export class ListProductsComponent implements OnInit {
     imageMargin = 1;
     showImage = false;
     showSpinner = false;
+    productsFiltered = false;
 
     errorMessage: string = '';
 
@@ -79,6 +80,8 @@ export class ListProductsComponent implements OnInit {
                 .toLocaleLowerCase()
                 .includes(filterBy.toLocaleLowerCase()));
 
+        this.productsFiltered = (filteredProducts?.length > 0);
+
         return (filteredProducts?.length > 0) ? filteredProducts : this.allProducts;
     }
 
@@ -87,6 +90,7 @@ export class ListProductsComponent implements OnInit {
     }
 
     refreshProducts() {
+        this.listFilter = '';
         this.retrieveAllProducts();
     }
 }
