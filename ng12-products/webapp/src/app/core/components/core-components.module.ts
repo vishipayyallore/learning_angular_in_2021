@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ErrorAlertComponent } from './alerts/error-alert/error-alert.component';
 import { LoaderComponent } from './loader/loader.component';
 
-
-
 @NgModule({
   declarations: [
     ErrorAlertComponent,
