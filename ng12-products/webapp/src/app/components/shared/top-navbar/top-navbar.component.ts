@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TopNavbarComponent implements OnInit {
 
   notificationsCount = 9;
-  
+
   constructor() { }
 
   ngOnInit(): void {

@@ -8,7 +8,8 @@
                 <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
             </button>
             <div class="px-2">&nbsp;</div>
-            <button type="button" class="btn btn-primary btn-sm ml-2 shadow" [routerLink]="['/products/add-product']" title="Add Product">
+            <button type="button" class="btn btn-primary btn-sm ml-2 shadow" [routerLink]="['/products/add-product']"
+                title="Add Product">
                 <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
             </button>
         </div>
@@ -25,7 +26,9 @@
                     <input type='text' [(ngModel)]='listFilter' />
                 </div>
                 <div class='col-md-6' *ngIf='listFilter'>
-                    <h6>Filtered by: <span class="{{productsFiltered ? 'filter-products-success' : 'filter-products-error'}}">{{listFilter}}</span></h6>
+                    <h6>Filtered by: <span
+                            class="{{productsFiltered ? 'filter-products-success' : 'filter-products-error'}}">{{listFilter}}</span>
+                    </h6>
                 </div>
             </div>
 
@@ -70,11 +73,13 @@
                             <td>
                                 <div class="d-flex justify-content-between px-2">
                                     <button type="button" class="btn btn-warning btn-sm ml-2 shadow text-white mx-2"
-                                        [routerLink]="['/products/edit-product', product.productId]" title="Edit Product">
+                                        [routerLink]="['/products/edit-product', product.productId]"
+                                        title="Edit Product">
                                         <i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>
                                     </button>
                                     <button type="button" class="btn btn-danger btn-sm ml-2 shadow"
-                                        [routerLink]="['/products/delete-product', product.productId]" title="Delete Product">
+                                        [routerLink]="['/products/delete-product', product.productId]"
+                                        title="Delete Product">
                                         <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
                                     </button>
                                 </div>
