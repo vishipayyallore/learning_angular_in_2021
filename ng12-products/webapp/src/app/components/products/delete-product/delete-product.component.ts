@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteProductComponent implements OnInit {
 
+  pageTitle = 'Delete Product';
+  
   constructor() { }
 
   ngOnInit(): void {

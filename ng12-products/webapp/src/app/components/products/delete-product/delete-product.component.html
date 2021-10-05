@@ -1,1 +1,15 @@
-<p>delete-product works!</p>
+<div class='card border-primary shadow'>
+    <div class='card-header d-flex justify-content-between'>
+        <h1>{{pageTitle}}</h1>
+    </div>
+
+    <div class='card-body px-2'>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-danger shadow" title="Delete Product">
+                <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-maincolor shadow mx-2 text-white" [routerLink]="['/products/list-products']" title="Back to Products">
+                <i class="fa fa-table fa-2x" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</div>
