@@ -5,11 +5,21 @@
 
     <div class='card-body px-2'>
 
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary shadow" title="Save Product">
-                <i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-maincolor shadow mx-2 text-white" [routerLink]="['/products/list-products']" title="Back to Products">
-                <i class="fa fa-table fa-2x" aria-hidden="true"></i></button>
-        </div>
+        <form [formGroup]="productForm" (ngSubmit)="onProductAdd(productForm.value)" novalidate>
+
+            <div class="form-group d-flex">
+                <label class="element col-md-2">Name: </label>
+                <input type="text" formControlName="name" class="form-control element ml-4" maxlength="50">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary shadow" title="Save Product">
+                    <i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-maincolor shadow mx-2 text-white"
+                    [routerLink]="['/products/list-products']" title="Back to Products">
+                    <i class="fa fa-table fa-2x" aria-hidden="true"></i></button>
+            </div>
+        </form>
+
     </div>
 </div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ProductsRoutingModule } from './products-routing.module';
 import { ListProductsComponent } from './list-products/list-products.component';
@@ -23,6 +23,7 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
     CommonModule,
     CoreComponentsModule,
     FormsModule,
+    ReactiveFormsModule,
     SharedModule,
     ProductsRoutingModule
   ]

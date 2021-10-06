@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'sv-add-product',
@@ -8,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
 export class AddProductComponent implements OnInit {
 
   pageTitle = 'Add Product';
-  
-  constructor() { }
+
+  productForm!: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+
+    this.productForm = this.formBuilder.group({
+      name: '',
+    });
+  }
 
   ngOnInit(): void {
+  }
+
+  onProductAdd(productData: any) {
   }
 
 }
