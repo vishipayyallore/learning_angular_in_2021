@@ -1,10 +1,19 @@
-<div class="shadow p-4">
-    <div class="content px-2 py-2">
-        <button type="button" class="btn shadow" [routerLink]="['/']" title="Home"> <i
-                class="fa fa-home fa-3x shadow"></i> </button>
+<div class='card border-primary shadow'>
+
+    <div class='card-header d-flex justify-content-between'>
+        <h1>{{pageTitle}}</h1>
     </div>
 
-    <div class="content px-2 py-">
-        <img src="../../../assets/images/404PageNotFound.png">
+    <div class="container">
+        <div class='card-body px-2'>
+            <div class="content px-2 py-2">
+                <button type="button" class="btn shadow" [routerLink]="['/']" title="Home"> <i
+                        class="fa fa-home fa-3x shadow"></i> </button>
+            </div>
+
+            <div class="content px-2 py-">
+                <img src="../../../assets/images/404PageNotFound.png">
+            </div>
+        </div>
     </div>
 </div>
