@@ -6,6 +6,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

@@ -1,11 +1,6 @@
 # 
 # Script to update the Packages inside all folders.
 #
-#
-#
-
-
-# TODO: Create an Array of folders and execute it loop
 
 # TODO: Convert this into function
 Set-Location -Path ..\webapp
