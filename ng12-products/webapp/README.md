@@ -1,6 +1,13 @@
 # Ng12Products
 
 
+> 1. install -g firebase-tools
+> 1. firebase login
+> 1. ng add @angular/fire
+> 1. firebase init `specify dist/ng12products as public folder`
+> 1. ng build --configuration=production
+> 1. firebase deploy --only hosting:the-shop-5975a (Firebase Project Name)
+
 ```
 ng new ng12-products --prefix sv
 
