@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  productsWebApiUrl: "http://localhost:3000"
+  productsWebApiUrl: "https://app-college-api-001.azurewebsites.net/api"
 };

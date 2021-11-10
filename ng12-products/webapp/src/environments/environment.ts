@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
 
-  productsWebApiUrl: "http://localhost:3000"
+  productsWebApiUrlx: "http://localhost:3000",
+  productsWebApiUrly: "https://localhost:7178/api",
+  productsWebApiUrl: "https://app-college-api-001.azurewebsites.net/api"
 };
 
 /*

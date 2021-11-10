@@ -4,6 +4,7 @@
 
 # TODO: Convert this into function
 Set-Location -Path ..\webapp
+
 npm i
 ng update @angular/cli @angular/core
 npm update
